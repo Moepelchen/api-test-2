@@ -16,6 +16,6 @@ app.get("/", (req, res, next) => {
 });
 
 app.post("/okta", (req, res, next) => {
-    console.dir(req.body);
+    console.log(req.body);
     res.json({ "hello" : req.body});
 });
