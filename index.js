@@ -17,5 +17,5 @@ app.get("/", (req, res, next) => {
 
 app.post("/okta", (req, res, next) => {
     console.log(req.body);
-    res.json({ "hello" : JSON.stringify(req.body)});
+    res.json({ "hello" : req.body});
 });
