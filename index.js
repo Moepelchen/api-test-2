@@ -16,6 +16,6 @@ app.get("/", (req, res, next) => {
 });
 
 app.post("/okta", (req, res, next) => {
-    console.log(req.body.data.events);
+    console.log(JSON.stringify(req.body.data.events));
     res.json({ "hello" : req.body.data.events});
 });
